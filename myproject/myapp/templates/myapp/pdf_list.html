@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF List</title>
+</head>
+<body>
+    <h1>PDF List</h1>
+    {% for pdf in pdfs %}
+        <p>{{ pdf.file.name }}</p>
+        <p>{{ pdf.text }}</p>
+    {% endfor %}
+</body>
+</html>
